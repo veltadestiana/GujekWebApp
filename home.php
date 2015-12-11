@@ -244,7 +244,7 @@ $userRow=mysql_fetch_array($res);
                                 <div class="white-header">
                                     <h5>Gujek</h5>
                                 </div>
-                                <img src="https://pbs.twimg.com/profile_images/658079986130096129/KOOZYL9p.png" width="60%" />
+                                <img src="https://pbs.twimg.com/profile_images/658079986130096129/KOOZYL9p.png" width="50%" />
                             </div>
                         </div><!-- /col-md-4-->
                         
