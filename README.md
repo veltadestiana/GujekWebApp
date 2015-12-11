@@ -16,4 +16,6 @@ COMING SOON!
 * Wahyu Rachmadityo Darmawan - [@webstersky](https://github.com/webstersky)
 
 ## Screenshots
-![Login Page](http://i65.tinypic.com/2urwe4o.png)
+![Login Screen](http://i67.tinypic.com/20r1w6x.png)
+![Welcome Page](http://i67.tinypic.com/nvd56h.png)
+![Database Display](http://i65.tinypic.com/2urwe4o.png)
