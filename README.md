@@ -1,6 +1,6 @@
 Gujek Web Application
 ======
-# COMING SOON! 
+COMING SOON! 
 **Gujek Web App** is our final group assignment for Database 1. We created a web administrator system for Gujek: 'A Gujek for every needs'.
 
 ## Built Using
