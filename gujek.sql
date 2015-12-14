@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Dec 13, 2015 at 08:11 PM
+-- Generation Time: Dec 14, 2015 at 07:13 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -63,6 +63,13 @@ CREATE TABLE `APPLICATION_DESIGNER` (
   `Email_AppDesign` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `APPLICATION_DESIGNER`
+--
+
+INSERT INTO `APPLICATION_DESIGNER` (`ID_AppDesign`, `Education`, `Email_AppDesign`) VALUES
+('381244202', 'Universitas Indonesi', 'codinggod@gmail.com');
+
 -- --------------------------------------------------------
 
 --
@@ -92,9 +99,17 @@ INSERT INTO `APP_FEEDBACK` (`Customer_ID`, `App_Version`, `Date_Feedback`, `Rati
 --
 
 CREATE TABLE `APP_RELEASE` (
-  `App_Version` char(10) NOT NULL,
-  `Design_ID` char(9) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `App_Version` varchar(10) NOT NULL DEFAULT '',
+  `Design_ID` int(9) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `APP_RELEASE`
+--
+
+INSERT INTO `APP_RELEASE` (`App_Version`, `Design_ID`) VALUES
+('ver 1.3', 901393998),
+('ver 1.4.1', 817515441);
 
 -- --------------------------------------------------------
 
@@ -388,8 +403,8 @@ ALTER TABLE `APP_FEEDBACK`
 -- Indexes for table `APP_RELEASE`
 --
 ALTER TABLE `APP_RELEASE`
-  ADD PRIMARY KEY (`App_Version`,`Design_ID`),
-  ADD KEY `Design_ID` (`Design_ID`);
+  ADD PRIMARY KEY (`App_Version`),
+  ADD KEY `App_Version` (`App_Version`);
 
 --
 -- Indexes for table `CUSTOMER`
@@ -491,8 +506,7 @@ ALTER TABLE `ANALYST`
 -- Constraints for table `APPLICATION_DESIGNER`
 --
 ALTER TABLE `APPLICATION_DESIGNER`
-  ADD CONSTRAINT `application_designer_ibfk_1` FOREIGN KEY (`ID_AppDesign`) REFERENCES `SOFTWARE_ENG` (`ID_SWeng`),
-  ADD CONSTRAINT `application_designer_ibfk_2` FOREIGN KEY (`ID_AppDesign`) REFERENCES `ANALYST` (`ID_Analyst`);
+  ADD CONSTRAINT `application_designer_ibfk_1` FOREIGN KEY (`ID_AppDesign`) REFERENCES `EMPLOYEE` (`ID_Empl`);
 
 --
 -- Constraints for table `APP_FEEDBACK`
@@ -500,13 +514,6 @@ ALTER TABLE `APPLICATION_DESIGNER`
 ALTER TABLE `APP_FEEDBACK`
   ADD CONSTRAINT `app_feedback_ibfk_1` FOREIGN KEY (`App_Version`) REFERENCES `APPLICATION` (`Version_Application`),
   ADD CONSTRAINT `app_feedback_ibfk_2` FOREIGN KEY (`Customer_ID`) REFERENCES `CUSTOMER` (`ID_Customer`);
-
---
--- Constraints for table `APP_RELEASE`
---
-ALTER TABLE `APP_RELEASE`
-  ADD CONSTRAINT `app_release_ibfk_1` FOREIGN KEY (`App_Version`) REFERENCES `APPLICATION` (`Version_Application`),
-  ADD CONSTRAINT `app_release_ibfk_2` FOREIGN KEY (`Design_ID`) REFERENCES `APPLICATION_DESIGNER` (`ID_AppDesign`);
 
 --
 -- Constraints for table `DRIVER`
