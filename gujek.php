@@ -239,7 +239,7 @@ $userRow=mysql_fetch_array($res);
                   <div class="dataTables">
 
                         <h1 style="text-align:center">
-                          Employee <span>Lists</span>
+                          Transportation <span>Transaction</span>
                         </h1>
                         <center>
                         <table cellpadding="0" cellspacing="0" border="0" class="display" id="TRANS" width="100%">

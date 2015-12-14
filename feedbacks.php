@@ -240,7 +240,7 @@ $userRow=mysql_fetch_array($res);
                   <div class="dataTables">
 
                         <h1 style="text-align:center">
-                          Employee <span>Lists</span>
+                          Application <span>Info</span>
                         </h1>
                         <center>
                         <table cellpadding="0" cellspacing="0" border="0" class="display" id="FEEDBACK" width="100%">
