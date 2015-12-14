@@ -152,17 +152,39 @@ $userRow=mysql_fetch_array($res);
                   </li>
 
                   <li class="sub-menu">
-                      <a href="employee.php" >
+                      <a href="javascript:;" >
                           <i class="fa fa-users"></i>
                           <span>Employees Record</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="employee.php">All Division</a></li>
+                          <li><a  href="analyst.php">Analyst</a></li>
+                          <li><a  href="designer.php">Application Designer</a></li>
+                          <li><a  href="driver.php">Driver</a></li>
+                          <li><a  href="softeng.php">Software Engineer</a></li>
+                          <li><a  href="supervisor.php">Supervisor</a></li>
+                      </ul>
                       </a>
                   </li>
 
                   <li class="sub-menu">
                       <a href="javascript:;" >
+                          <i class="fa fa-mobile"></i>
+                          <span>Application</span>
+                      </a>
+                      <ul class="sub">
+                          <li><a  href="applaunch.php">Version</a></li>
+                          <li><a  href="appver.php">Release</a></li>
+                          <li><a  href="feedbacks.php">Feedbacks</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="customer.php" >
                           <i class="fa fa-user"></i>
                           <span>Customer Profiles</span>
                       </a>
+
                   </li>
 
                   <li class="sub-menu">
@@ -171,10 +193,22 @@ $userRow=mysql_fetch_array($res);
                           <span>Transaction Record</span>
                       </a>
                       <ul class="sub">
+                          <li><a  href="transactions.php">All Transactions</a></li>
+                          <li><a  href="gujek.php">Gujek</a></li>
+                          <li><a  href="gubox.php">Gubox</a></li>
+                          <li><a  href="gufood.php">Gufood</a></li>
+                      </ul>
+                  </li>
 
-                          <li><a  href="panels.html">Gujek</a></li>
-                          <li><a  href="general.html">Gubox</a></li>
-                          <li><a  href="buttons.html">Gufood</a></li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-usd"></i>
+                          <span>Vendors</span>
+                      </a>
+                      <ul class="sub">
+
+                          <li><a  href="resto.php">Restaurant</a></li>
+                          <li><a  href="vehicles.php">Vehicles</a></li>
                       </ul>
                   </li>
                   

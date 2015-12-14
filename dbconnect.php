@@ -1,5 +1,5 @@
 <?php
-if(!mysql_connect("localhost","root","rahasia"))
+if(!mysql_connect("localhost","admin","rahasia"))
 {
 	die('oops connection problem ! --> '.mysql_error());
 }

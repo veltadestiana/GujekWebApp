@@ -19,16 +19,13 @@ use
 
 
 // Build our Editor instance and process the data coming from _POST
-Editor::inst( $db, 'EMPLOYEE', 'ID_Empl' )
+Editor::inst( $db, 'APP_FEEDBACK', 'Customer_ID' )
 	->fields(	
-		Field::inst( 'ID_Empl' ),
-		Field::inst( 'Super_ID' ),
-		Field::inst( 'Name_Empl' ),
-		Field::inst( 'DoB_Empl' ),
-		Field::inst( 'Gender_Empl' ),
-		Field::inst( 'Address_Empl' ),
-		Field::inst( 'Phone_Empl' )
+		Field::inst( 'Customer_ID' ),
+		Field::inst( 'App_Version' ),
+		Field::inst( 'Date_Feedback' ),
+		Field::inst( 'Rating_Feedback' ),
+		Field::inst( 'Comment_Feedback' )
 	)
 	->process( $_POST )
 	->json();
-

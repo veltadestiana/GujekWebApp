@@ -38,7 +38,7 @@ $userRow=mysql_fetch_array($res);
 
     <script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/s/dt/jqc-1.11.3,dt-1.10.10,b-1.1.0,se-1.1.0/datatables.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/dataTables.editor.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="js/table.CUSTOMER.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/table.APPVER.js"></script>
   </head>
 
   <body>
@@ -142,6 +142,7 @@ $userRow=mysql_fetch_array($res);
       MAIN SIDEBAR MENU
       *********************************************************************************************************************************************************** -->
       <!--sidebar start-->
+      <!--sidebar start-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
@@ -176,7 +177,7 @@ $userRow=mysql_fetch_array($res);
                   </li>
 
                   <li class="sub-menu">
-                      <a href="javascript:;" >
+                      <a class="active" href="javascript:;" >
                           <i class="fa fa-mobile"></i>
                           <span>Application</span>
                       </a>
@@ -188,7 +189,7 @@ $userRow=mysql_fetch_array($res);
                   </li>
 
                   <li class="sub-menu">
-                      <a class="active" href="customer.php" >
+                      <a href="customer.php" >
                           <i class="fa fa-user"></i>
                           <span>Customer Profiles</span>
                       </a>
@@ -239,23 +240,20 @@ $userRow=mysql_fetch_array($res);
                   <div class="dataTables">
 
                         <h1 style="text-align:center">
-                          CUSTOMERS <span>Lists</span>
+                          Employee <span>Lists</span>
                         </h1>
                         <center>
-                        <table cellpadding="0" cellspacing="0" border="0" class="display" id="CUSTOMER" width="100%">
+                        <table cellpadding="0" cellspacing="0" border="0" class="display" id="APPVER" width="100%">
                           <thead>
                             <tr>
-                              <th>Customer ID</th>
-                              <th>Full Name</th>
-                              <th>Email Address</th>
-                              <th>Username</th>
-                              <th>Password</th>
-                              <th>Phone No</th>
+                              <th>App Version</th>
+                              <th>Designer ID</th>
                             </tr>
                           </thead>
                         </table>
                     </div>
                     </div><!-- /row -->
+
                   </div><!-- /col-lg-9 END SECTION MIDDLE -->
        
 
